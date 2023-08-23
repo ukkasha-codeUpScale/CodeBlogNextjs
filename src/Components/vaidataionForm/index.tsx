@@ -9,19 +9,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function FormValidation() {
   const form = useFormik({
-    // <Formik
     initialValues:new FormEntity(),
     validationSchema: FormEntity.FormyupSchema(),
     onSubmit: async (values) => {
       console.log(values, "valuessssssssssssssssssssssssss");
       console.log(form?.errors, "valuessssssssssssssssssssssssss");
 
+      // add email password for this component and use it in pages
+
+
       try {
         const dta = await axios.post(`http://localhost:1337/api/auths`,  FormEntity)
         console.log(dta , 'data=========');
 
       } catch (error) {
-        
+
         console.log(error)
       }
     },
