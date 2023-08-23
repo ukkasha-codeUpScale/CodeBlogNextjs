@@ -21,6 +21,7 @@ export default function FormValidation() {
         console.log(dta , 'data=========');
 
       } catch (error) {
+        
         console.log(error)
       }
     },
