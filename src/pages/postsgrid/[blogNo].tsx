@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 
 export default function BlogNo({ data }: any) {
-  console.log('====================================');
+  console.log('pushing from new working branch');
   console.log(data , 'ccccccccccccccccccccccccccc');
   console.log('====================================');
   // const router = useRouter();
